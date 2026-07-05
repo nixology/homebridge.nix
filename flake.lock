@@ -1,0 +1,198 @@
+{
+  "nodes": {
+    "channel": {
+      "locked": {
+        "lastModified": 1782175435,
+        "narHash": "sha256-EMzXKmnOtBQ2MnvpiNOm7E+kOMvdPrIKaeg52Tip2Uk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "89570f24e97e614aa34aa9ab1c927b6578a43775",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "core": {
+      "inputs": {
+        "default": "default",
+        "flake-parts": "flake-parts",
+        "nixpkgs": [
+          "flake",
+          "core",
+          "default",
+          "channel"
+        ]
+      },
+      "locked": {
+        "lastModified": 1783092059,
+        "narHash": "sha256-uTuopZCKlbUjAOtPO176g7XmlKnXiROIzxF6X/vA+WU=",
+        "owner": "nixology",
+        "repo": "core.nix",
+        "rev": "6fa51e4c656be7450a79c09f0916149a737c320a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixology",
+        "repo": "core.nix",
+        "type": "github"
+      }
+    },
+    "default": {
+      "inputs": {
+        "channel": "channel"
+      },
+      "locked": {
+        "dir": "nixpkgs-unstable",
+        "lastModified": 1782487550,
+        "narHash": "sha256-3FNlJjDJ8D8W+q+uS6REnSWf0EnbE7wFq3JUVhP7CXw=",
+        "owner": "nixology",
+        "repo": "channels.nix",
+        "rev": "8af490517a58ad6d0954470ed1c16c0b639f975d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nixpkgs-unstable",
+        "owner": "nixology",
+        "repo": "channels.nix",
+        "type": "github"
+      }
+    },
+    "environments": {
+      "inputs": {
+        "flake": [
+          "flake"
+        ]
+      },
+      "locked": {
+        "lastModified": 1783109170,
+        "narHash": "sha256-bpk82R5BoLsK9YJrHcqIHkR4oFgACDqfqdCgakDiEcg=",
+        "owner": "nixology",
+        "repo": "environments.nix",
+        "rev": "f0fa83b672cec75ed7375366ec04ddece50c2580",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixology",
+        "repo": "environments.nix",
+        "type": "github"
+      }
+    },
+    "flake": {
+      "inputs": {
+        "core": "core"
+      },
+      "locked": {
+        "lastModified": 1783097748,
+        "narHash": "sha256-yNcfeCxm8xpdBQI8Abx8QDMN+J8ogIYySZAVWJlSlnw=",
+        "owner": "nixology",
+        "repo": "flake.nix",
+        "rev": "98e9f567f7df50dd0bf28f7add579b1bc4c76171",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixology",
+        "repo": "flake.nix",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1782949081,
+        "narHash": "sha256-vp6Y/Grm98ESt6ceOkWiHWyZRDV3J1RID4w+6NWK9yA=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "17c9d6cdfc60c64f4ee8d306f9bc0b4ccb51481e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "homebridge": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1780567770,
+        "narHash": "sha256-GIq0LjDF6dyXqU6yMTY2+56lF/UkdZFtnwpNG0k7Ic0=",
+        "owner": "homebridge",
+        "repo": "homebridge",
+        "rev": "88caf57fb0f452bb2edbaa47c2da081425ca566a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "homebridge",
+        "ref": "v2.1.0",
+        "repo": "homebridge",
+        "type": "github"
+      }
+    },
+    "homebridge-blink-security": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1782441118,
+        "narHash": "sha256-caRlAN9/nu3lMTm1uttByhgQzh4E0Q0OSZAwpU3cqOE=",
+        "owner": "BitWise-0x",
+        "repo": "homebridge-blink-security",
+        "rev": "9f14177e10fe1c0e032a1aa96496f55ff188d3d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BitWise-0x",
+        "ref": "v1.11.2",
+        "repo": "homebridge-blink-security",
+        "type": "github"
+      }
+    },
+    "homebridge-config-ui-x": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1780232382,
+        "narHash": "sha256-vvn/TkTegppe7FGaTHDXFk1BWgT6uWr4zBXgo6mU13M=",
+        "owner": "homebridge",
+        "repo": "homebridge-config-ui-x",
+        "rev": "e3ee5dafba759a64b1930e147d239df2166fba84",
+        "type": "github"
+      },
+      "original": {
+        "owner": "homebridge",
+        "ref": "v5.24.0",
+        "repo": "homebridge-config-ui-x",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1782614948,
+        "narHash": "sha256-ePjCwr1sNm9NYUqywL7QfK3JnlS015msC+eBu2zKlp8=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "db3f255737b94216eb71cce308e2912cf6bc2d7c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "environments": "environments",
+        "flake": "flake",
+        "homebridge": "homebridge",
+        "homebridge-blink-security": "homebridge-blink-security",
+        "homebridge-config-ui-x": "homebridge-config-ui-x"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
